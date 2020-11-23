@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="../../js/otentikasi.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../css/colorWhite.css">
+</head>
+<body background="../../img/bg.jpeg">
+    <nav style="background-color: whitesmoke;">
+        <table cellPadding="10" style="border-collapse: collapse;">
+            <tr>
+                <th><img src="../../img/logo.jpeg" width="50" alt=""></th>
+                <th style="width: 15%;"><a href="../index.html" style="color: black;">Silakan Login</a></th>
+                <th style="width: 100%;"></th>
+                <th><a href="#">Login</a></th>
+                <th><a href="../2-kurs/kurs.html">Kurs</a></th>
+                <th><a href="../3-chat/chat.html">Chat</a></th>
+                <th><a href="../4-image/dropdown.html">Dropdown</a></th>
+                <th><a href="../5-form/validasi.html">Validation</a></th>
+            </tr>
+        </table>
+    </nav>
+    <br>
+    <fieldset>
+    <h1 class="colorWhite">Login</h1>
+    <form>
+        <label class="colorWhite" for="user">Username :</label>
+        <input type="text" name="user" id="username"><br>
+        <br>
+        <label class="colorWhite" for="password">Password : </label>
+        <input type="password" name="password" id="password"><br><br>
+        <input type="button" name="login" value="Login" onclick="otentikasi()">
+    </form>
+    </fieldset>
+</body>
+</html>

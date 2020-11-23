@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html id="get" lang="en">
+
+<head id="get">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <style>
+        .valid {
+            color: green;
+        }
+
+        .valid:before {
+            position: relative;
+            /* left: -35px; */
+            content: "✔";
+        }
+
+        .invalid {
+            color: red;
+        }
+
+        .invalid:before {
+            position: relative;
+            /* left: -35px; */
+            content: "✖";
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="../../css/colorWhite.css">
+</head>
+
+<body background="../../img/bg.jpeg">
+    <nav style="background-color: whitesmoke;">
+        <table cellPadding="10" style="border-collapse: collapse;">
+            <tr>
+                <th><img src="../../img/logo.jpeg" width="50" alt=""></th>
+                <th style="width: 15%;"><a href="../index.html" style="color: black;">Area WIBU Form</a></th>
+                <th style="width: 100%;"></th>
+                <th><a href="../1-login/login.html">Login</a></th>
+                <th><a href="../2-kurs/kurs.html">Kurs</a></th>
+                <th><a href="../3-chat/chat.html">Chat</a></th>
+                <th><a href="../4-image/dropdown.html">Dropdown</a></th>
+                <th><a href="#">Validation</a></th>
+            </tr>
+        </table>
+    </nav>
+    <form class="colorWhite">
+        <h1 class="classWhite">Validation Form</h1>
+        <!-- namaPengguna -->
+        <label for="nama">Nama Pelanggan</label>
+        <input type="text" name="nama" id="namaPengguna" pattern=".{,30}" title="Max 30 character dan harus di isi"
+            required>
+        <span id="messageName" class="invalid">
+            Max 30 character dan harus di isi
+        </span><br>
+
+        <!-- Email -->
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            title="example : jhomn12@gmail.com" size="30" required>
+        <span id="messageEmail" class="invalid">
+            Sesuaikan dengan format email!
+        </span><br>
+
+        <!-- Jam -->
+        <label for="jam">Jam Keberangkatan</label>
+        <input type="text" name="jam" id="jam" required>
+        <span id="messageJam" class="invalid">
+            Format jam antara 00:00 - 23:59
+        </span><br>
+
+        <!-- tujuan keberangkatan -->
+        <label for="tujuan">Tujuan Keberangkatan</label>
+        <input type="text" name="tujuan" id="tujuan" required>
+        <span id="messageTujuan" class="invalid">
+            Masukkan sesuai list tujuan!
+        </span>
+        <p>Tujuan :</p>
+        <ul>
+            <li>Indonesia</li>
+            <li>Rusia</li>
+            <li>Jepang</li>
+        </ul>
+
+        <!-- Jumlah tiket -->
+        <label for="jumlah">Jumlah Tiket</label>
+        <input type="text" name="jumlah" id="jumlah" required>
+        <span id="messageJumlah" class="invalid">
+            Masukkan jumlah tiket 1 - 10
+        </span>
+        <br>
+        <br>
+
+        <input type="submit" name="submit" id="submit" onclick="getAll()" value="Submit">
+        <input type="reset" name="clear" id="" value="Batal">
+        <br>
+
+    </form>
+    <script id="get" src="../../js/validJS.js"></script>
+</body>
+
+</html>

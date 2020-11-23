@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Picker</title>
+    <script src="../../js/imgPickerJS.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../css/colorWhite.css">
+</head>
+<body background="../../img/bg.jpeg">
+    <nav style="background-color: whitesmoke;">
+        <table cellPadding="10" style="border-collapse: collapse;">
+            <tr>
+                <th><img src="../../img/logo.jpeg" width="50" alt=""></th>
+                <th style="width: 15%;"><a href="../index.html" style="color: black;">Area WIBU image</a></th>
+                <th style="width: 100%;"></th>
+                <th><a href="../1-login/login.html">Login</a></th>
+                <th><a href="../2-kurs/kurs.html">Kurs</a></th>
+                <th><a href="../3-chat/chat.html">Chat</a></th>
+                <th><a href="#">Dropdown</a></th>
+                <th><a href="../5-form/validasi.html">Validation</a></th>
+            </tr>
+        </table>
+    </nav>
+    <h1 class="colorWhite">Image Picker</h1>
+    <form>
+        <select name="" id="gunung" onchange="picker()">
+            <option value="bromo">Bromo</option>
+            <option value="everest">Everest</option>
+            <option value="fuji">Fuji</option>
+            <option value="kilimanjaro">Kilimanjaro</option>
+            <option value="merapi">Merapi</option>
+            <option value="salak">Salak</option>
+        </select>
+    </form>
+    <img id="gambar" width="300" src="http://www.bromotravelindo.com/wp-content/uploads/2015/11/gambar-gunung-gunung-kerinci-2.jpg" alt="">
+</body>
+</html>
